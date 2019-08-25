@@ -8,7 +8,7 @@ public class myMain {
             //myList.add(new Random().nextInt());
             myList.add(i);
         }
-        myList.stream().filter(x -> x % 5 == 0).map(myMain::pow2).forEach(System.out::println);
+        myList.stream().filter(x -> x % 5 == 0).map(myMain::pow2).map(x -> (x / 100)).map(x -> pow2(x)).forEach(System.out::println);
     }
 
     public static int pow2(int x) {
