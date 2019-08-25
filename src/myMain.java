@@ -14,6 +14,7 @@ public class myMain {
                 map(x -> (x / 2)).
                 map(x -> pow2(x)).
                 sorted((x, y) -> y - x). //big to small
+                limit(10). //limit the elements
                 forEach(System.out::println);
 
     }
